@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript">
+  </script>
+  <script src="jq.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!--<script src="app.js"></script>-->
+  <title>HTML vormid</title>
+</head>
+<body>
+  <div class="headings"> 
+    <h1>Vormid HTML keeles</h1>
+  <h2>Sportlase ankeet</h2>
+</div>
+  
+  <!--<table border="1" width="10%">
+    <tr>
+      <td>
+        Sisu 1
+      </td>
+      <td>
+        Sisu 2
+      </td>
+      <td rowspan="3">
+        #Rowspan
+      </td>
+    </tr>
+    <tr>
+        <td>
+          Sisu 3
+        </td>
+        <td>
+          Sisu 4
+        </td>
+      </tr>
+      <tr>
+          <td colspan="2">
+            Suur lahter
+          </td>
+        </tr>
+
+  </table>
+  <br>-->
+
+
+  <form name="ankeet">
+    
+   
+    <br>
+    <br>
+
+    <table id="tb" border="1" width="30%">
+      <tr>
+        <td>
+            <label for="nimi">Sisesta nimi</label>
+        </td>
+        <td>
+            <input type="text" class="infokast" id="nimi" size="10" placeholder="Eesnimi">
+        </td>
+        <td>
+          <span class="viga">Seda välja ei tohi jätta tühjaks</span>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">Vali sugu</td>
+      </tr>
+      <tr>
+        <td><input type="radio" id="mees" name="sugu" value="mees" onchange="onSugu()"></td>
+        <td> <label for="mees">mees</label></td>
+        <td rowspan="2"> <img src="blank.jpg" alt="pilt" id="pilt"></td>
+      </tr>
+      <tr>
+        <td><input type="radio" id="naine" name="sugu" value="naine" onchange="onSugu()"></td>
+          <td><label for="naine">naine</label></td>
+        </tr>
+      <tr>
+        <td colspan="3">Vali oma lemmikud spordialad:</td>
+       
+      </tr>
+      <tr> 
+        <td>
+         <input type="checkbox" class="sports" id="sport1" value="ujumine">
+        </td>
+        <td colspan="2"><label for="sport1">Ujumine</label></td>      
+      </tr>
+      <tr>
+        <td> <input type="checkbox" class="sports" id="sport2" value="jooksmine"></td>
+        <td colspan="2"><label for="sport2">Jooksmine</label></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" class="sports" id="sport3" value="fintess"></td>
+        <td colspan="2"><label for="sport3">Fitness</label></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" class="sports" id="sport4" value="uisutamine"></td>
+        <td colspan="2"><label for="sport4">Uisutamine</label></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" class="sports" id="sport5" value="jalgpall"></td>
+        <td colspan="2"><label for="sport5">Jalgpall</label></td>
+      </tr>
+      <tr> 
+        <td colspan="3">Vali oma lemmikvärv:</td>
+      </tr>
+      <tr>
+          <td > <input type="color" id="MyColor" value="#ff0080"></td>
+          <td colspan="2"><input type="button" value="lisa konsoolisse" onclick="favColor()" ></td>
+      </tr>
+      <tr>     
+       
+        <td colspan="3" id="submit"> <input type="button" class="submit" value="Loe andmed" onclick="andmeteLugemine()" ><br><br><input type="reset"> </td>
+      </tr>
+      <tr>
+        <td colspan="3"><div id="vastus">User info</div></td>
+
+      </tr>
+  
+
+    </table>
+  </form>
+  <br>
+  
+
+  
+</body>
+</html>
